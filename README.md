@@ -5,8 +5,8 @@ Todo Summary Assistant is a Next.js application that helps you manage your to-do
 
 Built with Next.js, React, Tailwind CSS, ShadCN UI, and Genkit for AI integration.
 
-![Todo Summary Assistant Screenshot](https://placehold.co/800x600.png?text=Todo+Summary+Assistant+App+Interface)
-*<p align="center" data-ai-hint="application user interface">A placeholder image of the Todo Summary Assistant application interface.</p>*
+![image](https://github.com/user-attachments/assets/0b19b712-5771-4f4f-a64f-3eb9eb9df54e)
+
 
 ## Core Features
 
