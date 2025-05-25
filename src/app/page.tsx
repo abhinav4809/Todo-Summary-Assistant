@@ -187,7 +187,7 @@ export default function Home() {
           </Card>
         </main>
         <footer className="mt-12 py-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TaskFlow. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Created By Abhinav</p>
         </footer>
       </div>
       <Toaster />
