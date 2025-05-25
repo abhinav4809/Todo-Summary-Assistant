@@ -1,12 +1,12 @@
 md
-# TaskFlow - Todo Summary Assistant
+# Todo Summary Assistant
 
-TaskFlow is a Next.js application that helps you manage your to-do items and leverage AI to summarize your pending tasks. You can also send these summaries directly to a configured Slack channel.
+Todo Summary Assistant is a Next.js application that helps you manage your to-do items and leverage AI to summarize your pending tasks. You can also send these summaries directly to a configured Slack channel.
 
 Built with Next.js, React, Tailwind CSS, ShadCN UI, and Genkit for AI integration.
 
-![TaskFlow Screenshot](https://placehold.co/800x600.png?text=TaskFlow+App+Interface)
-*<p align="center" data-ai-hint="application user interface">A placeholder image of the TaskFlow application interface.</p>*
+![Todo Summary Assistant Screenshot](https://placehold.co/800x600.png?text=Todo+Summary+Assistant+App+Interface)
+*<p align="center" data-ai-hint="application user interface">A placeholder image of the Todo Summary Assistant application interface.</p>*
 
 ## Core Features
 
@@ -39,9 +39,9 @@ Built with Next.js, React, Tailwind CSS, ShadCN UI, and Genkit for AI integratio
 1.  **Clone the repository:**
     ```bash
     git clone <your-repo-url>
-    cd taskflow 
+    cd todo-summary-assistant 
     ```
-    (Replace `<your-repo-url>` with the actual URL of this repository if you've forked it)
+    (Replace `<your-repo-url>` with the actual URL of this repository if you've forked it. You might want to update `todo-summary-assistant` to your chosen directory name if different)
 
 2.  **Install dependencies:**
     ```bash
@@ -78,7 +78,7 @@ To send summaries to Slack, you need to create an Incoming Webhook for your Slac
 
 1.  Go to the [Slack App Directory](https://api.slack.com/apps) and click "Create New App".
 2.  Choose "From scratch".
-3.  Enter an "App Name" (e.g., "TaskFlow Notifier") and select the "Workspace" you want to add it to. Click "Create App".
+3.  Enter an "App Name" (e.g., "Todo Summary Notifier") and select the "Workspace" you want to add it to. Click "Create App".
 4.  From your new app's settings page, navigate to **Features > Incoming Webhooks**.
 5.  Toggle **Activate Incoming Webhooks** to "On".
 6.  Click the **Add New Webhook to Workspace** button.
@@ -121,4 +121,3 @@ This project uses Genkit to interact with Large Language Models. By default, it'
 - **Advanced AI Features**: Explore more sophisticated AI capabilities, such as task prioritization, breaking down large tasks, or suggesting task categories.
 - **Customizable Slack Messages**: Allow users to customize the format or content of Slack notifications.
 - **Offline Support**: Enhance offline capabilities using Service Workers.
-

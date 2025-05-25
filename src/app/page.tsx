@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     setIsClient(true); // Ensures localStorage is accessed only on the client
-    const storedTodos = localStorage.getItem("taskflow-todos");
+    const storedTodos = localStorage.getItem("taskflow-todos"); // Keep internal key name for now to preserve existing data
     if (storedTodos) {
       try {
         setTodos(JSON.parse(storedTodos));
@@ -105,7 +105,7 @@ export default function Home() {
              <Edit3 className="h-10 w-10 text-primary" strokeWidth={1.5} />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-primary">
-            TaskFlow
+            Todo Summary Assistant
           </h1>
           <p className="text-muted-foreground mt-2 text-md sm:text-lg max-w-md mx-auto">
             Organize your tasks, get AI-powered summaries, and stay on top of your goals.
