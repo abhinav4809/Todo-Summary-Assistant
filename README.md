@@ -1,3 +1,4 @@
+md
 # TaskFlow - Todo Summary Assistant
 
 TaskFlow is a Next.js application that helps you manage your to-do items and leverage AI to summarize your pending tasks. You can also send these summaries directly to a configured Slack channel.
@@ -102,6 +103,10 @@ This project uses Genkit to interact with Large Language Models. By default, it'
 - **Framework**: Next.js with the App Router was chosen for its modern React features, server-side capabilities (Server Components, Server Actions), file-system routing, and overall development experience.
 - **Styling**: Tailwind CSS provides a utility-first approach for rapid and consistent UI development. ShadCN UI is used for its collection of beautifully designed, accessible, and customizable React components that integrate seamlessly with Tailwind CSS.
 - **AI Integration**: Genkit is utilized to abstract LLM interactions, facilitating features like task summarization. This allows for flexibility in choosing LLM providers and models. The `summarizeTodos` flow is a server-side Genkit flow, ensuring API keys and complex logic are not exposed to the client.
+    - **AI Summary & Slack**: The app uses AI to summarize pending tasks. To send these summaries to Slack:
+        1. Create an Incoming Webhook for your Slack workspace.
+        2. Copy the generated Webhook URL.
+        3. Add this URL to your .env.local file as `SLACK_WEBHOOK_URL`.
 - **Backend Logic**: Next.js Server Actions handle server-side logic such as generating AI summaries and dispatching notifications to Slack. This approach keeps the frontend and backend tightly coupled within the Next.js ecosystem, simplifying development and deployment.
 - **Todo State Management**: For this version, to-do items are managed on the client-side using React's `useState` hook. Data persistence across browser sessions is achieved by leveraging the browser's `localStorage`. While suitable for a personal tool, a production application with multiple users would typically employ a dedicated database (e.g., Firebase Firestore, Supabase PostgreSQL) managed via Server Actions.
 - **User Experience (UX)**: The UI is designed to be clean, minimalist, and intuitive, focusing on ease of task management. Clear visual hierarchy, responsive design, and subtle animations contribute to a smooth user experience. Notifications for asynchronous operations (like sending to Slack) are provided using `react-hot-toast` (integrated via ShadCN's `useToast` hook).
@@ -116,3 +121,4 @@ This project uses Genkit to interact with Large Language Models. By default, it'
 - **Advanced AI Features**: Explore more sophisticated AI capabilities, such as task prioritization, breaking down large tasks, or suggesting task categories.
 - **Customizable Slack Messages**: Allow users to customize the format or content of Slack notifications.
 - **Offline Support**: Enhance offline capabilities using Service Workers.
+
